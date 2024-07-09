@@ -7,7 +7,7 @@ RewriteCond %{HTTP_HOST} ^davidcarignan\.com [NC]
 RewriteCond %{SERVER_PORT} 80 
 RewriteRule ^(.*)$ https://www.davidcarignan.com/ [R=301,L]
 
-RewriteCond %{REQUEST_URI} !(\.gif|\.jpg|\.png|\.mp3|\.ogg|\.pdf)$ [NC]
+RewriteCond %{REQUEST_URI} !(\.gif|\.jpg|\.png|\.mp3|\.ogg|\.pdf|\.txt)$ [NC]
 RewriteRule ^.+$ / [R=301,NC,L]
 
 # Server can play audio
